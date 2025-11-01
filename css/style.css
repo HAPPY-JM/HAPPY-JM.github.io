@@ -754,7 +754,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 }
 
 .about-image img {
