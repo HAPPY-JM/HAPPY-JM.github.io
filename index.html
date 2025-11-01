@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HAPPY-JM의 개인 포트폴리오" />
+    <title>HAPPY-JM 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">HAPPY-JM</a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">홈</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="projects.html">프로젝트</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          안녕하세요, <span class="highlight">HAPPY-JM</span>입니다
+        </h1>
+        <p class="hero-subtitle">열정적인 개발자로 성장하고 있습니다</p>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn btn-primary">프로젝트 보기</a>
+          <a href="about.html" class="btn btn-secondary">자세히 알아보기</a>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://github.com/HAPPY-JM"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <div class="container">
+        <h2 class="section-title">기술 스택</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <p>시맨틱 마크업</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <p>반응형 디자인</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>인터랙티브 웹</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+            <p>모던 프론트엔드</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+            <p>백엔드 개발</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-git-alt"></i>
+            <h3>Git</h3>
+            <p>버전 관리</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+      <div class="container">
+        <h2 class="section-title">주요 프로젝트</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="img/project1.jpg"
+                alt="프로젝트 1"
+                onerror="this.src='https://via.placeholder.com/400x250?text=Project+1'"
+              />
+            </div>
+            <div class="project-info">
+              <h3>프로젝트 제목 1</h3>
+              <p>
+                프로젝트에 대한 간단한 설명입니다. 사용된 기술과 주요 기능을
+                소개합니다.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <a href="projects.html" class="project-link">자세히 보기 →</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="img/project2.jpg"
+                alt="프로젝트 2"
+                onerror="this.src='https://via.placeholder.com/400x250?text=Project+2'"
+              />
+            </div>
+            <div class="project-info">
+              <h3>프로젝트 제목 2</h3>
+              <p>
+                프로젝트에 대한 간단한 설명입니다. 사용된 기술과 주요 기능을
+                소개합니다.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+              </div>
+              <a href="projects.html" class="project-link">자세히 보기 →</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="projects.html" class="btn btn-primary">모든 프로젝트 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 HAPPY-JM. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://github.com/HAPPY-JM" target="_blank">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
