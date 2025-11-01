@@ -527,7 +527,6 @@ img {
   transition: var(--transition-slow);
   position: relative;
   overflow: hidden;
-  border: 2px solid transparent;
 }
 
 .skill-card::before {
@@ -538,19 +537,20 @@ img {
   right: 0;
   bottom: 0;
   border-radius: 20px;
-  padding: 3px;
   background: linear-gradient(
     135deg,
-    var(--primary-color),
-    var(--secondary-color),
-    var(--accent-color)
+    rgba(99, 102, 241, 0.15),
+    rgba(139, 92, 246, 0.15),
+    rgba(236, 72, 153, 0.15)
   );
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.skill-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .skill-card:hover {
