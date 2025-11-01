@@ -1,3 +1,25 @@
+/* ===== NEXON Lv1 Gothic Font ===== */
+@font-face {
+    font-family: 'NexonLv1Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NexonLv1Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NexonLv1Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
 /* ===== Pretendard Font ===== */
 @font-face {
     font-family: 'Pretendard';
@@ -124,6 +146,7 @@ img {
 }
 
 .logo a {
+    font-family: 'NexonLv1Gothic', 'Pretendard', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -194,6 +217,7 @@ img {
 }
 
 .hero-title {
+    font-family: 'NexonLv1Gothic', 'Pretendard', sans-serif;
     font-size: 3.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -217,6 +241,7 @@ img {
 }
 
 .btn {
+    font-family: 'NexonLv1Gothic', 'Pretendard', sans-serif;
     padding: 12px 30px;
     border-radius: 50px;
     font-weight: 600;
@@ -305,6 +330,7 @@ img {
 
 /* ===== Section Styles ===== */
 .section-title {
+    font-family: 'NexonLv1Gothic', 'Pretendard', sans-serif;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
@@ -359,6 +385,7 @@ img {
 }
 
 .skill-card h3 {
+    font-family: 'NexonLv1Gothic', 'Pretendard', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
