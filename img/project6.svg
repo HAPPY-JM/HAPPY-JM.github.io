@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250">
+  <defs>
+    <linearGradient id="cardGradient6" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#cardGradient6)"/>
+  <path d="M50 210C110 150 180 190 240 150C300 110 340 130 380 90L380 250L50 250Z" fill="#ffffff" opacity="0.14"/>
+  <circle cx="320" cy="70" r="26" fill="#fbbf24" opacity="0.32"/>
+  <text x="50%" y="46%" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#ffffff">
+    Project 6
+  </text>
+  <text x="50%" y="62%" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#e0e7ff">
+    Commerce Platform
+  </text>
+</svg>

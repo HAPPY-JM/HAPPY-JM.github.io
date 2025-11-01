@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250">
+  <defs>
+    <linearGradient id="cardGradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#cardGradient2)"/>
+  <rect x="40" y="40" width="120" height="120" rx="16" fill="#ffffff" opacity="0.1"/>
+  <rect x="240" y="110" width="120" height="120" rx="16" fill="#fbbf24" opacity="0.28"/>
+  <text x="50%" y="46%" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#ffffff">
+    Project 2
+  </text>
+  <text x="50%" y="62%" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#e0e7ff">
+    Interactive App
+  </text>
+</svg>

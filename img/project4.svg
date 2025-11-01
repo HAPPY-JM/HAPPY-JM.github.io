@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250">
+  <defs>
+    <linearGradient id="cardGradient4" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#cardGradient4)"/>
+  <polygon points="0,220 180,120 400,250 0,250" fill="#fbbf24" opacity="0.22"/>
+  <circle cx="70" cy="70" r="28" fill="#ffffff" opacity="0.2"/>
+  <text x="50%" y="46%" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#ffffff">
+    Project 4
+  </text>
+  <text x="50%" y="62%" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#e0e7ff">
+    Mobile Experience
+  </text>
+</svg>
