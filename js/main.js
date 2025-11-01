@@ -1,3 +1,21 @@
+// ===== Dark Mode Toggle =====
+const themeToggle = document.getElementById('themeToggle');
+const htmlElement = document.documentElement;
+
+// Check for saved theme preference or default to 'light'
+const currentTheme = localStorage.getItem('theme') || 'light';
+htmlElement.setAttribute('data-theme', currentTheme);
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+}
+
 // ===== Mobile Navigation Toggle =====
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -36,11 +54,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ===== Navbar Background on Scroll =====
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
+    const isDark = htmlElement.getAttribute('data-theme') === 'dark';
+    
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.style.background = isDark ? 'rgba(26, 35, 50, 0.98)' : 'rgba(255, 255, 255, 0.98)';
         navbar.style.backdropFilter = 'blur(10px)';
     } else {
-        navbar.style.background = 'var(--white)';
+        navbar.style.background = 'var(--card-bg)';
         navbar.style.backdropFilter = 'none';
     }
 });
@@ -193,7 +213,22 @@ scrollTopBtn.addEventListener('mouseleave', () => {
     scrollTopBtn.style.transform = 'scale(1)';
 });
 
+// Update scroll-to-top button on theme change
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        setTimeout(() => {
+            const isDark = htmlElement.getAttribute('data-theme') === 'dark';
+            const scrollTopBtn = document.querySelector('.scroll-top-btn');
+            if (scrollTopBtn) {
+                scrollTopBtn.style.background = isDark 
+                    ? 'linear-gradient(135deg, #3E5879, #213555)' 
+                    : 'linear-gradient(135deg, #213555, #3E5879)';
+            }
+        }, 10);
+    });
+}
+
 // ===== Console Message =====
-console.log('%c🎉 Welcome to HAPPY-JM Portfolio! ', 'background: #667eea; color: white; font-size: 16px; padding: 10px;');
-console.log('%cBuilt with ❤️ using HTML, CSS, and JavaScript', 'color: #6366f1; font-size: 12px;');
+console.log('%c🎉 Welcome to HAPPY-JM Portfolio! ', 'background: #213555; color: white; font-size: 16px; padding: 10px;');
+console.log('%cBuilt with ❤️ using HTML, CSS, and JavaScript', 'color: #3E5879; font-size: 12px;');
 

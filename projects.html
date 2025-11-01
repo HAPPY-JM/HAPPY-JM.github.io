@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HAPPY-JM의 프로젝트">
     <title>프로젝트 - HAPPY-JM 포트폴리오</title>
+    <script>
+        (function () {
+            try {
+                const storedTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', storedTheme);
+            } catch (error) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -20,6 +30,11 @@
                 <li><a href="about.html">소개</a></li>
                 <li><a href="projects.html" class="active">프로젝트</a></li>
             </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-sun theme-icon"></i>
+                <div class="theme-toggle-btn"></div>
+                <i class="fas fa-moon theme-icon"></i>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -55,7 +70,7 @@
                 <!-- Project 1 -->
                 <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="img/project1.jpg" alt="포트폴리오 웹사이트" onerror="this.src='https://via.placeholder.com/400x250?text=Portfolio+Website'">
+                        <img src="img/placeholder-project.svg" alt="포트폴리오 웹사이트">
                         <div class="project-overlay">
                             <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                             <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
@@ -75,7 +90,7 @@
                 <!-- Project 2 -->
                 <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="img/project2.jpg" alt="Todo 앱" onerror="this.src='https://via.placeholder.com/400x250?text=Todo+App'">
+                        <img src="img/placeholder-project.svg" alt="Todo 앱">
                         <div class="project-overlay">
                             <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                             <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
@@ -95,7 +110,7 @@
                 <!-- Project 3 -->
                 <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="img/project3.jpg" alt="날씨 앱" onerror="this.src='https://via.placeholder.com/400x250?text=Weather+App'">
+                        <img src="img/placeholder-project.svg" alt="날씨 앱">
                         <div class="project-overlay">
                             <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                             <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
@@ -115,7 +130,7 @@
                 <!-- Project 4 -->
                 <div class="project-card" data-category="mobile">
                     <div class="project-image">
-                        <img src="img/project4.jpg" alt="모바일 앱" onerror="this.src='https://via.placeholder.com/400x250?text=Mobile+App'">
+                        <img src="img/placeholder-project.svg" alt="모바일 앱">
                         <div class="project-overlay">
                             <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                             <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
@@ -134,7 +149,7 @@
                 <!-- Project 5 -->
                 <div class="project-card" data-category="design">
                     <div class="project-image">
-                        <img src="img/project5.jpg" alt="UI 디자인" onerror="this.src='https://via.placeholder.com/400x250?text=UI+Design'">
+                        <img src="img/placeholder-project.svg" alt="UI 디자인">
                         <div class="project-overlay">
                             <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                             <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
@@ -154,7 +169,7 @@
                 <!-- Project 6 -->
                 <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="img/project6.jpg" alt="E-commerce" onerror="this.src='https://via.placeholder.com/400x250?text=E-commerce'">
+                        <img src="img/placeholder-project.svg" alt="E-commerce">
                         <div class="project-overlay">
                             <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                             <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
@@ -189,4 +204,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-

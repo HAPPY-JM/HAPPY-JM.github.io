@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" role="img" aria-labelledby="title desc">
+  <title id="title">Project Placeholder</title>
+  <desc id="desc">Simple gradient placeholder image for portfolio projects.</desc>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#213555"/>
+      <stop offset="100%" stop-color="#3E5879"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#gradient)"/>
+  <g fill="#ffffff" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="200" y="125" font-size="28" font-weight="bold">Project Image</text>
+    <text x="200" y="160" font-size="18">Replace with your screenshot</text>
+  </g>
+</svg>
