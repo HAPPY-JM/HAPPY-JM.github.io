@@ -87,6 +87,33 @@ if (filterButtons.length > 0) {
   });
 }
 
+// ===== Overlay Placeholder Toast =====
+const placeholderLinks = document.querySelectorAll('.overlay-btn[href="#"]');
+
+if (placeholderLinks.length > 0) {
+  const toast = document.createElement("div");
+  toast.className = "toast-message";
+  toast.textContent = "준비중입니다";
+  document.body.appendChild(toast);
+
+  let toastTimer;
+
+  const showToast = () => {
+    toast.classList.add("visible");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove("visible");
+    }, 1800);
+  };
+
+  placeholderLinks.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      showToast();
+    });
+  });
+}
+
 // ===== Scroll Animations =====
 const observerOptions = {
   threshold: 0.1,

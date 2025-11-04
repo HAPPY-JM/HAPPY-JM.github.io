@@ -1,192 +1,244 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HAPPY-JM의 프로젝트">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HAPPY-JM의 프로젝트" />
     <title>프로젝트 - HAPPY-JM 포트폴리오</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">HAPPY-JM</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">홈</a></li>
-                <li><a href="about.html">소개</a></li>
-                <li><a href="projects.html" class="active">프로젝트</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">HAPPY-JM</a>
         </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">홈</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="projects.html" class="active">프로젝트</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Projects Hero -->
     <section class="page-hero">
-        <div class="container">
-            <h1>Projects</h1>
-            <p>제가 작업한 프로젝트들을 소개합니다</p>
-        </div>
+      <div class="container">
+        <h1>Projects</h1>
+        <p>제가 작업한 프로젝트들을 소개합니다</p>
+      </div>
     </section>
 
     <!-- Filter Buttons -->
     <section class="filter-section">
-        <div class="container">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">전체</button>
-                <button class="filter-btn" data-filter="web">웹 개발</button>
-                <button class="filter-btn" data-filter="mobile">모바일</button>
-                <button class="filter-btn" data-filter="design">디자인</button>
-            </div>
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">전체</button>
+          <button class="filter-btn" data-filter="web">웹 개발</button>
+          <button class="filter-btn" data-filter="mobile">모바일</button>
+          <button class="filter-btn" data-filter="design">디자인</button>
         </div>
+      </div>
     </section>
 
     <!-- Projects Grid -->
     <section class="projects-section">
-        <div class="container">
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="img/project1.svg" alt="포트폴리오 웹사이트">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>포트폴리오 웹사이트</h3>
-                        <p>반응형 디자인을 적용한 개인 포트폴리오 웹사이트입니다. HTML, CSS, JavaScript를 사용하여 제작했습니다.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="img/project2.svg" alt="Todo 앱">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Todo 관리 앱</h3>
-                        <p>React를 사용한 할 일 관리 애플리케이션입니다. 로컬 스토리지를 활용하여 데이터를 저장합니다.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="img/project3.svg" alt="날씨 앱">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>날씨 정보 앱</h3>
-                        <p>OpenWeather API를 활용한 실시간 날씨 정보 애플리케이션입니다.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">API</span>
-                            <span class="tag">HTML/CSS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card" data-category="mobile">
-                    <div class="project-image">
-                        <img src="img/project4.svg" alt="모바일 앱">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>모바일 애플리케이션</h3>
-                        <p>React Native를 사용한 크로스 플랫폼 모바일 애플리케이션입니다.</p>
-                        <div class="project-tags">
-                            <span class="tag">React Native</span>
-                            <span class="tag">Mobile</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card" data-category="design">
-                    <div class="project-image">
-                        <img src="img/project5.svg" alt="UI 디자인">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>UI/UX 디자인</h3>
-                        <p>Figma를 활용한 웹사이트 UI/UX 디자인 프로젝트입니다.</p>
-                        <div class="project-tags">
-                            <span class="tag">Figma</span>
-                            <span class="tag">UI/UX</span>
-                            <span class="tag">Design</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="img/project6.svg" alt="E-commerce">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/HAPPY-JM" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>쇼핑몰 웹사이트</h3>
-                        <p>풀스택 E-commerce 웹사이트입니다. 장바구니, 결제 시스템 등을 구현했습니다.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img src="img/project1.svg" alt="스마트팜 웹앱" />
+              <div class="project-label">Project 1</div>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="overlay-btn"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
             </div>
+            <div class="project-info">
+              <h3>스마트팜 관리 웹앱</h3>
+              <p>
+                농가 센서 데이터를 실시간으로 수집·시각화하고 원격 제어까지
+                제공하는 스마트팜 대시보드입니다. Vue 3와 TypeScript 기반으로
+                모듈형 컴포넌트와 안정적인 상태 관리를 구현했습니다.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Vue 3</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">IoT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img src="img/project2.svg" alt="쇼핑몰 웹사이트" />
+              <div class="project-label">Project 2</div>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="overlay-btn"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>쇼핑몰 웹사이트</h3>
+              <p>
+                풀스택 E-commerce 웹사이트입니다. 상품 관리, 장바구니, 결제
+                연동까지 포함해 실제 운영을 염두에 둔 기능을 구현했습니다. Vue
+                2 기반 프런트엔드가 결제 및 주문 API와 안정적으로 연동됩니다.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Vue 2</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">E-commerce</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img src="img/project3.svg" alt="관광 커머스 플랫폼" />
+              <div class="project-label">Project 3</div>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="overlay-btn"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+              <div class="project-info">
+                <h3>관광 커머스 플랫폼</h3>
+                <p>
+                  투어 상품과 숙소 예약을 한 곳에서 제공하는 커머스 플랫폼입니다.
+                  Vue 3로 구현한 SPA 구조에 실시간 재고, 결제, 고객 리뷰를 연동해
+                  여행자와 파트너 모두의 사용성을 높였습니다.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Vue 3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+          <!-- Project 4 -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img src="img/project4.svg" alt="Todo 관리 웹앱" />
+              <div class="project-label">Project 4</div>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="overlay-btn"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Todo 관리 웹앱</h3>
+              <p>
+                Vanilla JavaScript로 제작한 할 일 관리 애플리케이션입니다. 로컬
+                스토리지와 필터링 기능을 통해 개인 생산성을 높일 수 있도록
+                만들었습니다.
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">LocalStorage</span>
+                <span class="tag">Responsive</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card" data-category="design">
+            <div class="project-image">
+              <img src="img/project5.svg" alt="UI 디자인" />
+              <div class="project-label">Project 5</div>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="overlay-btn"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>UI/UX 디자인</h3>
+              <p>Figma를 활용한 웹사이트 UI/UX 디자인 프로젝트입니다.</p>
+              <div class="project-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img src="img/project6.svg" alt="포트폴리오 웹사이트" />
+              <div class="project-label">Project 6</div>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="overlay-btn"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>포트폴리오 웹사이트</h3>
+              <p>
+                반응형 디자인을 적용한 개인 포트폴리오 웹사이트입니다. HTML,
+                CSS, JavaScript를 사용하여 제작했습니다.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 HAPPY-JM. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://github.com/HAPPY-JM" target="_blank">GitHub</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Email</a>
-            </div>
+      <div class="container">
+        <p>&copy; 2025 HAPPY-JM. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://github.com/HAPPY-JM" target="_blank">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Email</a>
         </div>
+      </div>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

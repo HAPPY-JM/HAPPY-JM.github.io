@@ -8,9 +8,5 @@
   </defs>
   <rect width="400" height="250" fill="url(#cardGradient3)"/>
   <path d="M320 200C320 160 280 150 260 130C240 110 240 80 200 80C160 80 160 110 140 130C120 150 80 160 80 200Z" fill="#ffffff" opacity="0.18"/>
-  <circle cx="280" cy="90" r="22" fill="#fbbf24" opacity="0.45"/>
-  <g fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
-    <text x="50%" y="45%" font-size="30" dominant-baseline="middle">Project 3</text>
-    <text x="50%" y="62%" font-size="16" dominant-baseline="middle" fill="#e0e7ff">Weather App</text>
-  </g>
+  <circle cx="280" cy="90" r="22" fill="#c7d2fe" opacity="0.45"/>
 </svg>
